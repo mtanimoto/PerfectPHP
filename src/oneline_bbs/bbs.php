@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * mysql系の関数は5系と7系で違う。
+ * 下記コードは7系で動くように少し修正している。
+ */
+
 // データベース接続
 // $link = mysql_connect('localhost', 'root', '');
 $link = mysqli_connect('localhost', 'root', '');
